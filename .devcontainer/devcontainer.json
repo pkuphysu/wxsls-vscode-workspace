@@ -1,0 +1,51 @@
+{
+	"name": "Python 3 & PostgreSQL",
+	"dockerComposeFile": "../docker-compose.yml",
+	"overrideCommand": false,
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	// "remoteUser": "vscode",
+	"forwardPorts": [
+		3000,
+		5000,
+		5432
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"name": "Container database",
+				"driver": "PostgreSQL",
+				"previewLimit": 50,
+				"server": "localhost",
+				"port": 5432,
+				"database": "postgres",
+				"username": "postgres",
+				"password": "postgres"
+			}
+		],
+		"python.defaultInterpreterPath": "/usr/local/bin/python",
+		"python.languageServer": "Pylance",
+		"python.linting.enabled": true,
+		"python.linting.pylintEnabled": true,
+		"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+		"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+		"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+		"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+		"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+		"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+		"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+		"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+		"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
+		"python.testing.pytestPath": "/usr/local/py-utils/bin/pytest"
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-python.vscode-pylance",
+		"mtxr.sqltools",
+		"mtxr.sqltools-driver-pg",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"svelte.svelte-vscode",
+		"sdras.vue-vscode-snippets"
+	],
+}

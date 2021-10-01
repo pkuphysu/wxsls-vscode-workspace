@@ -1,0 +1,16 @@
+{
+    "folders": [
+        {
+            "path": "wxsls-page"
+        },
+        {
+            "path": "wxsls-pyfn"
+        },
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "svelte.enable-ts-plugin": true,
+    }
+}
